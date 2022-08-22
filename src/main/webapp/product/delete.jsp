@@ -13,7 +13,7 @@
 <body>
 <h1>Delete product</h1>
 <p>
-    <a href="/customers">Back to product list</a>
+    <a href="/products">Back to product list</a>
 </p>
 <form method="post">
     <h3>Are you sure?</h3>
@@ -22,7 +22,7 @@
         <table>
             <tr>
                 <td>Name: </td>
-                <td>${requestScope["product"].getName()}</td>
+                <td>${product.name}</td>
             </tr>
             <tr>
                 <td>Price: </td>
@@ -38,9 +38,9 @@
             </tr>
             <tr>
                 <td><input type="submit" value="Delete product"></td>
-                <td><a href="/products">Back to product list</a></td>
             </tr>
         </table>
     </fieldset>
+</form>
 </body>
 </html>

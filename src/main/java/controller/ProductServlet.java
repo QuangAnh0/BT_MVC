@@ -173,7 +173,7 @@ public class ProductServlet extends HttpServlet {
         } else {
             this.productService.remove(id);
             try {
-                response.sendRedirect("/product");
+                response.sendRedirect("products");
             } catch (IOException e) {
                 e.printStackTrace();
             }
